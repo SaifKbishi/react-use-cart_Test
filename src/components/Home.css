@@ -1,0 +1,10 @@
+.itemsRow{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.itemCard{
+  margin: 20px 20px;
+}
