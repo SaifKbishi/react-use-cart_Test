@@ -6,3 +6,7 @@
 .btn-cart{
   margin: 0 3px;
 }
+.container{
+  display: flex;
+  justify-content: center;
+}

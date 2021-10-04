@@ -1,25 +1,19 @@
 import React from 'react';
-import {Button, Typography, Card, CardActions, CardActionArea, CardContent,CardMedia } from '@mui/material/';
+import {Button, Typography, Card, CardActions, CardActionArea, CardContent,CardMedia, Container } from '@mui/material/';
 import { useCart } from 'react-use-cart';
 
 const ItemCard = (props) => {
   const {addItem} = useCart();
+
   return (
     <Card sx={{ maxWidth: 400 }} className="itemCard">
       <CardActionArea>
-        {/* <CardMedia
-          component="img"
-          height="140"
-          width='100%'
-          image={props.img}
-          alt="green iguana"
-        /> */}
         <img
           src={`${props.img}`}
           className='inCartImage'
           alt={props.title}
           loading="lazy"
-          style={{maxWidth:'100px', maxHieght:'100px'}}
+          style={{ maxHeight:'130px'}}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
