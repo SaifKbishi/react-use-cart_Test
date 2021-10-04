@@ -7,11 +7,19 @@ const ItemCard = (props) => {
   return (
     <Card sx={{ maxWidth: 400 }} className="itemCard">
       <CardActionArea>
-        <CardMedia
+        {/* <CardMedia
           component="img"
           height="140"
+          width='100%'
           image={props.img}
           alt="green iguana"
+        /> */}
+        <img
+          src={`${props.img}`}
+          className='inCartImage'
+          alt={props.title}
+          loading="lazy"
+          style={{maxWidth:'100px', maxHieght:'100px'}}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">

@@ -16,7 +16,7 @@ const data = {
     {
       id: 2,
       img: img2,
-      title: 'banana',
+      title: 'Banana',
       desc: '',
       price: '50',
     },
